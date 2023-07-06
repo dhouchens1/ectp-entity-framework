@@ -27,7 +27,7 @@
             First Name
         </th>
         <th>
-            @Html.ActionLink("Enrollment Date", "Index", new { sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter })
+            @Html.ActionLink("Birth Date", "Index", new { sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter })
         </th>
         <th></th>
     </tr>
@@ -40,15 +40,15 @@
                 @Html.DisplayFor(modelItem => item.LastName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.FirstMidName)
+                @Html.DisplayFor(modelItem => item.FirstName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.EnrollmentDate)
+                @Html.DisplayFor(modelItem => item.BirthDate)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                @Html.ActionLink("Edit", "Edit", new { id = item.PersonId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.PersonId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.PersonId })
             </td>
         </tr>
     }

@@ -1,14 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Web.Mvc;
+using ECTPEntityFramework.DataAccess;
 using ECTPEntityFramework.Entities;
+using PagedList;
 
 namespace ECTPEntityFramework.Controllers
 {
     public class PersonController : Controller
     {
-        //private SchoolContext db = new SchoolContext();
+        private EctpContext db = new EctpContext();
 
         // GET: Student
         public ViewResult Index(string sortOrder, string currentFilter, string searchString, int? page)
@@ -27,6 +28,8 @@ namespace ECTPEntityFramework.Controllers
             }
 
             ViewBag.CurrentFilter = searchString;
+
+            var people = db.People;
 
             //var students = from s in db.Students
             //               select s;
@@ -51,10 +54,9 @@ namespace ECTPEntityFramework.Controllers
             //        break;
             //}
 
-            //int pageSize = 3;
-            //int pageNumber = (page ?? 1);
-            //return View(students.ToPagedList(pageNumber, pageSize));
-            return View(new List<Person>());
+            int pageSize = 3;
+            int pageNumber = (page ?? 1);
+            return View(people.ToPagedList(pageNumber, pageSize));
         }
 
 
@@ -66,12 +68,12 @@ namespace ECTPEntityFramework.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             //Student student = db.Students.Find(id);
-            var student = new Person();
-            if (student == null)
+            var person = db.People.Find(id);
+            if (person == null)
             {
                 return HttpNotFound();
             }
-            return View(student);
+            return View(person);
         }
 
         // GET: Student/Create

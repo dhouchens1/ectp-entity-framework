@@ -5,6 +5,6 @@ namespace ECTPEntityFramework.DataAccess
 {
     public class EctpContext : DbContext
     {
-        public DbSet<Person> Persons { get; set; }
+        public DbSet<Person> People { get; set; }
     }
 }

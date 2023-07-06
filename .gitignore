@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/ECTPEntityFramework
+/packages
+/ECTPEntityFramework/bin/
+/ECTPEntityFramework/obj/Debug/

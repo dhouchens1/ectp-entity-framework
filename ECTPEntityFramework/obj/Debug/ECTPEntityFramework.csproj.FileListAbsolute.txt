@@ -30,3 +30,39 @@ C:\Users\david.houchens\Downloads\ASP.NET MVC Application Using Entity Framework
 C:\Users\david.houchens\Downloads\ASP.NET MVC Application Using Entity Framework Code First\C#\ContosoUniversity\bin\ECTPEntityFramework.pdb
 C:\Users\david.houchens\Downloads\ASP.NET MVC Application Using Entity Framework Code First\C#\ContosoUniversity\obj\Debug\ECTPEntityFramework.dll
 C:\Users\david.houchens\Downloads\ASP.NET MVC Application Using Entity Framework Code First\C#\ContosoUniversity\obj\Debug\ECTPEntityFramework.pdb
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\ECTPEntityFramework.dll.config
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\ECTPEntityFramework.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\ECTPEntityFramework.pdb
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\Antlr3.Runtime.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\EntityFramework.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\EntityFramework.SqlServer.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\Microsoft.Web.Infrastructure.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\Newtonsoft.Json.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\PagedList.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\PagedList.Mvc.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\System.Web.Helpers.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\System.Web.Mvc.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\System.Web.Optimization.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\System.Web.Razor.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\System.Web.WebPages.Deployment.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\System.Web.WebPages.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\System.Web.WebPages.Razor.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\WebGrease.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\EntityFramework.xml
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\EntityFramework.SqlServer.xml
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\PagedList.xml
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\PagedList.Mvc.xml
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\System.Web.Helpers.xml
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\System.Web.Mvc.xml
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\System.Web.Optimization.xml
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\System.Web.Razor.xml
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\System.Web.WebPages.xml
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\System.Web.WebPages.Deployment.xml
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\System.Web.WebPages.Razor.xml
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\Antlr3.Runtime.pdb
+C:\src\ectp-entity-framework\ECTPEntityFramework\bin\Newtonsoft.Json.xml
+C:\src\ectp-entity-framework\ECTPEntityFramework\obj\Debug\ECTPEntityFramework.csproj.AssemblyReference.cache
+C:\src\ectp-entity-framework\ECTPEntityFramework\obj\Debug\ECTPEntityFramework.csproj.CoreCompileInputs.cache
+C:\src\ectp-entity-framework\ECTPEntityFramework\obj\Debug\ECTPEntityFramework.csproj.CopyComplete
+C:\src\ectp-entity-framework\ECTPEntityFramework\obj\Debug\ECTPEntityFramework.dll
+C:\src\ectp-entity-framework\ECTPEntityFramework\obj\Debug\ECTPEntityFramework.pdb

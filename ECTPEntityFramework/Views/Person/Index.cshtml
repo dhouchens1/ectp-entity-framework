@@ -1,5 +1,5 @@
-﻿@model PagedList.IPagedList<ECTPEntityFramework.Entities.Person>
-@using PagedList.Mvc;
+﻿@model List<ECTPEntityFramework.Entities.Person>
+
 <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 
 @{
@@ -21,13 +21,13 @@
 <table class="table">
     <tr>
         <th>
-            @Html.ActionLink("Last Name", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
+            Last Name
         </th>
         <th>
             First Name
         </th>
         <th>
-            @Html.ActionLink("Birth Date", "Index", new { sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter })
+            Birth Date
         </th>
         <th></th>
     </tr>
@@ -54,8 +54,3 @@
     }
 
 </table>
-<br />
-Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
-
-@Html.PagedListPager(Model, page => Url.Action("Index",
-    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

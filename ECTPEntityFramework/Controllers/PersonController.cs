@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Net;
 using System.Web.Mvc;
 using ECTPEntityFramework.DataAccess;
@@ -70,23 +71,14 @@ namespace ECTPEntityFramework.Controllers
 
         [HttpPost, ActionName("Edit")]
         [ValidateAntiForgeryToken]
-        public ActionResult EditPost(int? id)
+        public ActionResult EditPost(int? id, string firstName, string lastName, DateTime birthDate)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            // TODO: 
-
-            //var personToUpdate = db.People.Find(id);
-            //if (TryUpdateModel(personToUpdate, "",
-            //        new string[] { "LastName", "FirstName", "BirthDate" }))
-            //{
-            //    db.SaveChanges();
-
-            //    return RedirectToAction("Index");
-            //}
+            // TODO: Find the person to be updated with the given ID, update with the values from the parameters passed in and save to the database
 
             return RedirectToAction("Index");
         }

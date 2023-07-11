@@ -15,11 +15,8 @@ namespace ECTPEntityFramework.Controllers
             ViewBag.CurrentFilter = currentFilter;
 
             var people = db.People.AsQueryable();
-            if (!string.IsNullOrEmpty(searchString))
-            {
-                people = people.Where(s => s.LastName.Contains(searchString)
-                                           || s.FirstName.Contains(searchString));
-            }
+            
+            // TODO: Using LINQ, filter the "people" query to only include matches where the first name or last name contains the search string
 
             return View(people.ToList());
         }
@@ -31,11 +28,10 @@ namespace ECTPEntityFramework.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            var person = db.People.Find(id);
-            if (person == null)
-            {
-                return HttpNotFound();
-            }
+            Person person = null;
+
+            // TODO: Use the Find() method provided by the People DbSet to return the person with the given ID
+
             return View(person);
         }
 
@@ -50,8 +46,7 @@ namespace ECTPEntityFramework.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.People.Add(person);
-                db.SaveChanges();
+                // TODO: Add the person entity passed into this endpoint into the database
                 return RedirectToAction("Index");
             }
 
@@ -82,16 +77,18 @@ namespace ECTPEntityFramework.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            var personToUpdate = db.People.Find(id);
-            if (TryUpdateModel(personToUpdate, "",
-                    new string[] { "LastName", "FirstName", "BirthDate" }))
-            {
-                db.SaveChanges();
+            // TODO: 
 
-                return RedirectToAction("Index");
-            }
+            //var personToUpdate = db.People.Find(id);
+            //if (TryUpdateModel(personToUpdate, "",
+            //        new string[] { "LastName", "FirstName", "BirthDate" }))
+            //{
+            //    db.SaveChanges();
 
-            return View(new Person());
+            //    return RedirectToAction("Index");
+            //}
+
+            return RedirectToAction("Index");
         }
 
         public ActionResult Delete(int? id, bool? saveChangesError = false)
@@ -117,9 +114,7 @@ namespace ECTPEntityFramework.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id)
         {
-            var person = db.People.Find(id);
-            db.People.Remove(person);
-            db.SaveChanges();
+            // TODO: Find the person with the given ID in the database and remove that record
 
             return RedirectToAction("Index");
         }

@@ -66,5 +66,3 @@ C:\src\ectp-entity-framework\ECTPEntityFramework\obj\Debug\ECTPEntityFramework.c
 C:\src\ectp-entity-framework\ECTPEntityFramework\obj\Debug\ECTPEntityFramework.csproj.CopyComplete
 C:\src\ectp-entity-framework\ECTPEntityFramework\obj\Debug\ECTPEntityFramework.dll
 C:\src\ectp-entity-framework\ECTPEntityFramework\obj\Debug\ECTPEntityFramework.pdb
-C:\src\ectp-entity-framework\ECTPEntityFramework\obj\Debug\ECTPEntityFramework.Migrations.InitialCreate.resources
-C:\src\ectp-entity-framework\ECTPEntityFramework\obj\Debug\ECTPEntityFramework.csproj.GenerateResource.cache

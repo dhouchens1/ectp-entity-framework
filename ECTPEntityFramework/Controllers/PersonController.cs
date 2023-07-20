@@ -16,8 +16,10 @@ namespace ECTPEntityFramework.Controllers
             ViewBag.CurrentFilter = currentFilter;
 
             var people = db.People.AsQueryable();
-            
-            // TODO: Using LINQ, filter the "people" query to only include matches where the first name or last name contains the search string
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                // TODO: Using LINQ, filter the "people" query to only include matches where the first name or last name contains the search string
+            }
 
             return View(people.ToList());
         }
